@@ -8,6 +8,6 @@ When(/^I set the showtime to "(.*?)" at "(.*?)"$/) do |date, time|
 end
 
 Then(/^the showtime description should be "(.*?)"$/) do |showtime|
-  @movie.showtime.should eq(showtime)
+  expect(@movie.showtime).to eq(showtime)
 end
 
